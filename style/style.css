@@ -12,7 +12,7 @@
 /* Variable Css  */
 :root{
     --first-color: #A29596;
-    --primary-color: #A29596;
+    --primary: #A29596;
     --second-color: #33303d;
     --black-color: #111111;
     --white-color: #fff;
@@ -134,7 +134,7 @@ a{
 .sneaker__figure{
     width: 240px;
     height: 240px;
-    background-color: var(--primary-color);
+    background-color: var(--primary);
     border-radius: 50%;
     transition: .5s;
 }
@@ -167,7 +167,7 @@ a{
     cursor: pointer;
 }
 .sneaker__colors .active{
-    border: 2px solid var(--whitee-color);
+    border: 2px solid var(--white-color);
     box-shadow: 0 0 2px rgba(0,0,0,1);
 }
 
@@ -217,15 +217,17 @@ a{
     line-height: 30px;
     border-radius: .25rem;
     cursor: pointer;
+    transition: .5s;
 }
 .size__content .active{
-    background-color: var(--first-color);
+    background-color: var(--primary);
     color: var(--white-color);
 
 }
 .cant__title{
     font-size: var(--normal-font-size);
     margin-bottom: 1rem;
+    
 }
 .cant__content{
     width: 100px;
@@ -233,11 +235,12 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: var(--primary);
     color: var(--white-color);
     padding: .5rem;
     border-radius: .25rem;
     cursor: pointer;
+    transition: .5s;
 }
 .price{
     position: fixed;
@@ -257,10 +260,11 @@ a{
     color: var(--black-color);
 }
 .price__button{
-    background-color: var(--primary-color);
+    background-color: var(--primary);
     color: var(--white-color);
     padding: 1.25rem 3.125rem;
     border-radius: .5rem;
+    transition: .5s;
 }
 /* === Media Queris === */
 @media screen and (min-width: 968px){
@@ -280,6 +284,7 @@ a{
     .nav__toggle{
         display: none;
     }
+
     .home{
         height: 100vh;
         grid-template-columns: max-content max-content;
@@ -288,6 +293,7 @@ a{
         justify-content: center;
         column-gap: 6rem;
     }
+
     .sneaker__figure{
         width: 430px;
         height: 430px;
