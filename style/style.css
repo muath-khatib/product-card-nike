@@ -91,28 +91,35 @@ a{
         left: -100%;
         top: var(--header-height);
         background-color: var(--white-color);
-        width: 80%;
+        width: 40%;
         height: 100%;
         padding: 2rem;
         z-index: var(--z-fixed);
-        transition: .3s;
+        transition: .7s;
     }
 }
 .nav__item{
     margin-bottom: 2rem;
     font-weight: var(--font-bold);
-
+    
 }
+.nav__item .active{
+    border-bottom: 2px solid var(--black-color);
+}
+
 .nav__link{
     color: var(--black-color);
-
+    transition: .3s;
 }
+
 .nav__toggle{
     cursor: pointer;
 }
 /* Pparecer Menu */
 .show{
+    transition: .7s;
     left: 0;
+    
 }
 /* === Home === */
 .home{
@@ -120,7 +127,6 @@ a{
     display: grid;
     grid-template-rows: 1fr 1.5fr;
     grid-template-areas: 'sneaker';
-    /* overflow: hidden; */
 }
 /* === Sneaker=== */
 .sneaker{

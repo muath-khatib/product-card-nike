@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product card Nike</title>
+    <title>Nike Air Motion 2</title>
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
@@ -20,14 +20,29 @@
         <!-- Nav List -->
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">MEN</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">WOMEN</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">KIDS</a></li>
-            <li class="nav__item">
+
+            <li class="nav__item " id="men" onclick="clickPage(this)"> 
+              <a href="#" class="nav__link active">MEN</a>
+             </li>
+
+            <li class="nav__item" id="women" onclick="clickPage(this)">
+              <a href="#women" class="nav__link">WOMEN</a>
+            </li>
+
+            <li class="nav__item" id="kids" onclick="clickPage(this)">
+              <a href="#" class="nav__link">KIDS</a>
+            </li>
+
+            <li class="nav__item" id="customize" onclick="clickPage(this)">
               <a href="#" class="nav__link">CUSTOMIZE</a>
             </li>
-            <li class="nav__item"><a href="#" class="nav__link">SALE</a></li>
+
+            <li class="nav__item" id="sale" onclick="clickPage(this)">
+              <a href="#" class="nav__link">SALE</a>
+            </li>
+
           </ul>
+
         </div>
         <!-- Shop Cart -->
         <div class="nav__shop">
@@ -44,8 +59,8 @@
           <div class="sneaker__figure"></div>
 
           <div>
-            <img src="./assest/img/NikeAirMaxMotion2.png" alt="" class="sneaker__img shows" color="#A29596"/>
-            <img src="./assest/img/NikeAirMax Motion2black.png" alt="" class="sneaker__img" color="#111111"/>
+            <img src="./assest/img/Men1.png" id="img-1" alt="" class="sneaker__img shows" color="#A29596"/>
+            <img src="./assest/img/Men2.png" id="img-2" alt="" class="sneaker__img" color="#111111"/>
           </div>
 
           <div class="sneaker__colors">
@@ -95,6 +110,6 @@
       </div>
     </main>
 
-    <script src="./app.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
