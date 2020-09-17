@@ -14,7 +14,7 @@
     --first-color: #A29596;
     --primary: #A29596;
     --second-color: #33303d;
-    --black-color: #111111;
+    --black-color: #3f4040;
     --white-color: #fff;
 }
  /* Fuente y tipografia */
@@ -155,13 +155,16 @@ a{
     transform: rotate(30deg);
     opacity: 0;
     filter: drop-shadow(0 10px 10px rgba(17,17,17,0.5));
+    transition: .5s;
 }
 .shows{
     opacity: 1;
+    transition: .5s;
+    transition-property: inherit;
+
 }
 .sneaker__colors{
     position: absolute;
-    
     right: 0;
 }
 .sneaker__color{
@@ -171,19 +174,20 @@ a{
     border-radius: 50%;
     margin-bottom: .5rem;
     cursor: pointer;
+    background-color: #5e5e5f;
 }
 .sneaker__colors .active{
     border: 2px solid var(--white-color);
     box-shadow: 0 0 2px rgba(0,0,0,1);
 }
 
-.sneaker__colors-one {
+/* .sneaker__colors-one {
     background-color: var(--first-color);
      
 }
 .sneaker__colors-two{
     background-color: var(--black-color);
-}
+} */
 /* === Data === */
 .data{
     margin-bottom: 1.5rem;
